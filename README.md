@@ -1,13 +1,13 @@
 # Quiz Game
 
-Un jeu de quiz interactif avec des personnages animés.
+Un jeu de quiz prêt à la personnalisation. But : contenu en masse.
 
 ## Installation
 
 1. Cloner le repository :
 ```bash
-git clone [URL_DU_REPO]
-cd [NOM_DU_DOSSIER]
+git clone https://github.com/ourouchy/QUIZZ.git
+cd QUIZZ/
 ```
 
 2. Créer un environnement virtuel et l'activer :
@@ -23,7 +23,7 @@ venv\Scripts\activate  # Sur Windows
 pip install -r requirements.txt
 ```
 
-## Structure des dossiers
+## Structure des personnages
 
 ```
 characters/
@@ -53,6 +53,7 @@ common_sounds/       # Sons communs
 ## Lancement
 
 ```bash
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 python main.py
 ```
 
